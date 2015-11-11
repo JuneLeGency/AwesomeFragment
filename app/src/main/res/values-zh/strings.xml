@@ -1,0 +1,3 @@
+<resources>
+    <string name="msg_network_error">额，请求失败了，点击重试～</string>
+</resources>

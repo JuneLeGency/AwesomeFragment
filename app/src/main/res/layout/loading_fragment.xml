@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/progress_container"
+        layout="@layout/progress_container"
+        android:visibility="gone"
+        tools:visibility='visible' />
+
+    <FrameLayout
+        android:id="@+id/view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewStub
+            android:id="@+id/custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include layout="@layout/empty_layout" />
+
+        <ViewStub
+            android:id="@+id/need_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/network_toast"
+            layout="@layout/network_alert"
+            android:visibility="gone"
+            tools:visibility='visible' />
+    </FrameLayout>
+</FrameLayout>
